@@ -6,16 +6,17 @@ After installing and starting/enabling docker, run
 
 then
 
-``` docker run --name mariadb -e MARIADB_ROOT_PASSWORD=voteapp -p 3306:3306 -d docker.io/library/mariadb:latest ```
+``` docker run --name mariadb -e MARIADB_ROOT_PASSWORD=voteapp -p 3306:3306 -d docker.io/library/mariadb/server:latest ```
 
 Mariadb can also be installed locally
-
-create a database with ```create database test```, user "root", password "voteapp"
-
 
 To connect to the database
 
 ```mariadb --host 127.0.0.1 -P 3306 --user root -p voteapp ```
+
+create a database with ```create database test```, user "root", password "voteapp"
+
+
 
 For swagger:
 
