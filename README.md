@@ -6,15 +6,15 @@ After installing and starting/enabling docker, run
 
 then
 
-``` docker run --name mariadb -e MARIADB_ROOT_PASSWORD=voteapp -p 3306:3306 -d docker.io/library/mariadb/server:latest ```
+```docker run -p 127.0.0.1:3306:3306 --name mariadb -e MARIADB_ROOT_PASSWORD=voteapp -d mariadb:latest ```
 
 Mariadb can also be installed locally
 
 To connect to the database
 
-```mariadb --host 127.0.0.1 -P 3306 --user root -p voteapp ```
+```mariadb --host 127.0.0.1 -P 3306 --user root -p ```
 
-create a database with ```create database test```, user "root", password "voteapp"
+create a database with ```create database testDB;```, user "root", password "voteapp"
 
 
 
