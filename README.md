@@ -14,7 +14,7 @@ To enter the docker container:
 
 ```docker exec -it mariadb bash   ``` 
 
-To connect to the database
+To connect to the database (while inside the docker container) or localy
 
 ```mariadb --host 127.0.0.1 -P 3306 --user root -p ```
 
